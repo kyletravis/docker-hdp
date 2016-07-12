@@ -3,7 +3,7 @@ RUN yum install -y sudo wget openssl-devel postgresql-jdbc
 RUN wget -nv http://public-repo-1.hortonworks.com/ambari/centos7/2.x/updates/2.2.2.0/ambari.repo -O /etc/yum.repos.d/ambari.repo
 RUN wget -nv http://public-repo-1.hortonworks.com/HDP/centos6/2.x/updates/2.4.2.0/hdp.repo -O /etc/yum.repos.d/hdp.repo
 RUN rpm -iUvh http://dl.fedoraproject.org/pub/epel/7/x86_64/e/epel-release-7-7.noarch.rpm
-RUR yum -y update
+RUN yum -y update
 RUN yum -y install python-pip && \
     yum groupinstall 'Development Tools' -y && \
     yum install -y python-devel && \
@@ -24,6 +24,7 @@ RUN yum install -y datafu_*
 RUN yum install -y spark_*
 RUN yum install -y falcon_*
 RUN yum install -y oozie_*
+RUN yum install -y zeppelin_*
 #RUN yum install -y lucidworks-hdpsearch
 RUN yum install -y ambari-metrics-*
 RUN yum install -y lzo snappy-devel rpcbind

@@ -1,1 +1,1 @@
-docker exec -it dockerhdp_ambari-server.dev_1 /bin/bash
+docker exec -it dockerhdp_master0.dev_1 /bin/bash

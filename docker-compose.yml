@@ -63,6 +63,8 @@ services:
      - "6183:6183"
      # Kerberos
      - "88:88"
+     # Zeppelin
+     - "9995:9995"
   node:
     build: containers/node
     networks:
