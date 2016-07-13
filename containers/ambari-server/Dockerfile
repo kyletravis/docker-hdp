@@ -1,4 +1,4 @@
-FROM centos:7
+FROM centos
 RUN yum install -y wget sudo net-tools ntp ntpdate unzip rpm nfs-common tmux screen ncurses-devel lvm2* telnet
 RUN chkconfig ntpd on 
 RUN wget -nv http://public-repo-1.hortonworks.com/ambari/centos7/2.x/updates/2.2.2.0/ambari.repo -O /etc/yum.repos.d/ambari.repo
